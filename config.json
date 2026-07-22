@@ -1,6 +1,7 @@
 {
-  "version": "2026-07-22.2",
-  "_comment": "FareBoost parser overrides. Every key is optional; anything absent, empty or malformed falls back to the value compiled into the app. Editing this file changes behaviour on the next app start or within 6 hours, with no Play release.",
+  "version": "2026-07-22.3",
+  "_comment": "FareBoost parser overrides. Every key is optional; anything absent, empty or malformed falls back to the value compiled into the app. Edits go live within 30 minutes, with no Play release and no reinstall.",
+
   "uber_tier_keywords": [
     "trip request",
     "new trip",
@@ -32,7 +33,13 @@
     "deliver",
     "uber reserve"
   ],
+
   "rating_fare_guard_enabled": true,
   "rating_fare_guard_min": 3.5,
-  "rating_fare_guard_max": 5.0
+  "rating_fare_guard_max": 5.0,
+
+  "ocr_fare_repair_enabled": true,
+  "ocr_distance_repair_enabled": true,
+
+  "uber_wake_hold_ms": 25000
 }
