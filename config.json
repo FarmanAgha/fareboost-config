@@ -1,0 +1,19 @@
+{
+  "version": "2026-07-22.1",
+  "_comment": "FareBoost parser overrides. Every key is optional; anything absent, empty or malformed falls back to the value compiled into the app. Editing this file changes behaviour on the next app start or within 6 hours, with no Play release.",
+
+  "uber_tier_keywords": [
+    "trip request", "new trip", "new ride", "pickup in",
+    "trip radar", "upcoming trip", "uber match", "match found",
+    "next trip", "new rider", "rider request",
+    "km) trip", "mi) trip",
+    "uberx", "uber comfort", "business comfort", "comfort",
+    "uber black", "uberblack", "uber premier", "uber pet",
+    "uber green", "uber xl", "uber share", "uberpool",
+    "package", "uber connect", "deliver"
+  ],
+
+  "rating_fare_guard_enabled": true,
+  "rating_fare_guard_min": 3.5,
+  "rating_fare_guard_max": 5.0
+}
