@@ -1,7 +1,6 @@
 {
-  "version": "2026-07-22.4",
+  "version": "2026-07-22.5",
   "_comment": "FareBoost parser overrides. Every key is optional; anything absent, empty or malformed falls back to the value compiled into the app. Edits go live within 30 minutes, with no Play release and no reinstall.",
-
   "uber_tier_keywords": [
     "trip request",
     "new trip",
@@ -33,18 +32,15 @@
     "deliver",
     "uber reserve"
   ],
-
   "rating_fare_guard_enabled": true,
   "rating_fare_guard_min": 3.5,
   "rating_fare_guard_max": 5.0,
-
   "ocr_fare_repair_enabled": true,
   "ocr_distance_repair_enabled": true,
-
   "uber_wake_hold_ms": 25000,
-
   "_autoaccept_comment": "A platform may run LIVE only once its audit log shows the tap landing correctly on real offers. Flip to true to graduate one - no rebuild needed. Lyft: proven 2026-07-19 plus a live tap on record. Uber: 10 clean shadow lines but no gesture has ever executed (canPerformGestures was missing until 2026-07-22). Hopp: no audit entry of any kind.",
   "autoaccept_live_lyft": true,
   "autoaccept_live_uber": false,
-  "autoaccept_live_hopp": false
+  "autoaccept_live_hopp": false,
+  "golden_min_fare": 10.0
 }
